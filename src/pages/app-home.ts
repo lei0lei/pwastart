@@ -81,6 +81,7 @@ export class AppHome extends LitElement {
       <app-header></app-header>
 
       <main>
+      <p>wowowoowowowowowowowowowowo</p>
         <div id="welcomeBar">
           <sl-card id="welcomeCard">
             <div slot="header">
