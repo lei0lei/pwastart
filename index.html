@@ -37,12 +37,17 @@
     onload="document.documentElement.classList.add('sl-theme-dark');">
 
   <script type="module" src="/src/app-index.ts"></script>
+
 </head>
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
   <app-index></app-index>
-  <p>hello ,this is an app for polar h10</p>
+  <p>hello ,this is an app for polar h10aaa</p>
+
+  <button id="getDetails">Get device details</button>
+  <div id="details"></div>
+  <script src="/src/ble.ts"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(
