@@ -25,6 +25,8 @@ export class AppAbout extends LitElement {
       <app-header ?enableBack="${true}"></app-header>
 
       <main>
+
+        <p>hahahahhahahahaha</p>
         <h2>About Page</h2>
 
         <sl-card>
