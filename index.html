@@ -53,7 +53,7 @@ var updateacc=false;
 const streams= {
     ACC_H10:{name:'ACC_H10',id:2,type:"Accelerometer",code_start:[0x02, 0x01, acc_range, 0x00, 0x00, 0x01, acc_rate, 0x00, 0x01, 0x01, acc_resolution, 0x00]},
     SDK:{name:'SDK',id:9,type:"SDK mode",code_start:[]},
-    // PPG:{name:'PPG',id:1,type:"photoplethysmogram",code_start:[0x00, 0x01, samplerate, 0x00, 0x01, 0x01, 0x16, 0x00, 0x04, 0x01, 0x04]},
+    PPG:{name:'PPG',id:1,type:"photoplethysmogram",code_start:[0x00, 0x01, samplerate, 0x00, 0x01, 0x01, 0x16, 0x00, 0x04, 0x01, 0x04]},
     ACC_Sense:{name:'ACC_Sense',id:2,type:"Accelerometer",code_start:[0x02, 0x01, acc_range, 0x00, 0x00, 0x01, 0xA0, 0x01,0x01, 0x01, acc_resolution, 0x00,4,1,3]},
     ECG:{name:'ECG',id:0,type:"Electrocardiogram",code_start:[0x00, 0x01, 0x82, 0x00, 0x01, 0x01, 0x0E, 0x00]}};
 
@@ -470,12 +470,12 @@ function updateGraphs() {
   <div id='Combined'  style="height:300px;width:80%;"></div>
   <div id='Timings' style="height:500px;width:80%;"></div>
   <div id='ACCgraph'  style="height:300px;width:80%;"></div>
-  <!-- <p>To temporaly align devices either use the  keys or hold the Sense and H10 together and 'bounce' to achieve an acceleration greater than 1.4G then click Align. Check alignment and repeat if necessary</p>
-  <button id='alignDevices' onClick="alignDevices()">Align Devices</button>
-  <div id='ECGgraph' style="height:300px;width:80%;"></div> -->
-  <!-- <div id='PPGgraph' style="height:300px;width:80%;"></div> -->
-  <!-- <h2>Pressures, timings and notes</h2><div id='ttable'><table id="list_timing"><th>Date/time</th><th>Time (Excel format)</th><th>Systolic</th><th>Diastolic</th><th>Timing</th><th>BPM</th><th>Notes</th></table></div>
-  <button onClick='copyTable()'>Copy table</button> -->
+  <p>To temporaly align devices either use the  keys or hold the Sense and H10 together and 'bounce' to achieve an acceleration greater than 1.4G then click Align. Check alignment and repeat if necessary</p>
+   <button id='alignDevices' onClick="alignDevices()">Align Devices</button>
+   <div id='ECGgraph' style="height:300px;width:80%;"></div>
+   <div id='PPGgraph' style="height:300px;width:80%;"></div>
+   <h2>Pressures, timings and notes</h2><div id='ttable'><table id="list_timing"><th>Date/time</th><th>Time (Excel format)</th><th>Systolic</th><th>Diastolic</th><th>Timing</th><th>BPM</th><th>Notes</th></table></div>
+   <button onClick='copyTable()'>Copy table</button>
 
 
   <!-- <button id="getDetails">Get device details</button>
