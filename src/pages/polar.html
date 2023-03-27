@@ -411,10 +411,10 @@ function updateGraphs() {
     </head>
     <body>
     <h1>Blood flow transit time: ECG R wave to PPG peak flow</h1>
-    <p>This application probably only works with Chrome (it is based on <a href="https://web.dev/bluetooth/">Web Bluetooth API</a> communicating with a Polar H10 for ECG and a Polar Sense for PPG.
-        Connect to the two devices first and then start the data streams. Change scale of PPG with - and = keys (it also scales trigger sensitivity).
+    <p>This application probably only works with Chrome (it is based on <a href="https://web.dev/bluetooth/">Web Bluetooth API</a> communicating with a Polar H10 for ECG.
+        Connect to the devices first and then start the data streams.
     </p>
-    <button id='Sense_connect' onClick="deviceConnect('Sense')">Connect to Polar Verity Sense (PPG)</button>
+    <!-- <button id='Sense_connect' onClick="deviceConnect('Sense')">Connect to Polar Verity Sense (PPG)</button> -->
     <button id='H10_connect' onClick="deviceConnect('H10')">Connect to H10 (ECG)</button>&nbsp;&nbsp;&nbsp;
     <button id='Start streams' onClick="StartStreams()" disabled>Start all streams</button>
     <button id='Stop streams' onClick="disconnect()" disabled>Stop all streams</button>&nbsp;&nbsp;&nbsp;
@@ -433,7 +433,7 @@ function updateGraphs() {
     <p>To temporaly align devices either use the  keys or hold the Sense and H10 together and 'bounce' to achieve an acceleration greater than 1.4G then click Align. Check alignment and repeat if necessary</p>
     <button id='alignDevices' onClick="alignDevices()">Align Devices</button>
     <div id='ECGgraph' style="height:300px;width:80%;"></div>
-    <div id='PPGgraph' style="height:300px;width:80%;"></div>
+    <!-- <div id='PPGgraph' style="height:300px;width:80%;"></div> -->
     <h2>Pressures, timings and notes</h2><div id='ttable'><table id="list_timing"><th>Date/time</th><th>Time (Excel format)</th><th>Systolic</th><th>Diastolic</th><th>Timing</th><th>BPM</th><th>Notes</th></table></div>
     <button onClick='copyTable()'>Copy table</button>
 </body>
